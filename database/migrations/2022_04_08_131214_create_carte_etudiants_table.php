@@ -15,6 +15,9 @@ class CreateCarteEtudiantsTable extends Migration
     {
         Schema::create('carte_etudiants', function (Blueprint $table) {
             $table->id();
+            $table->string('nomEtudiant');
+            $table->string('prenomEtudiant');
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }
