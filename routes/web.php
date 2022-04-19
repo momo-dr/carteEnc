@@ -26,3 +26,7 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::resource('demandeCarte', 'App\Http\Controllers\CarteEncController');
+
+

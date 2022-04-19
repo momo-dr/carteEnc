@@ -19,7 +19,7 @@ class CreateCarteEtudiantsTable extends Migration
             $table->string('prenomEtudiant');
             $table->string('email')->unique();
             $table->timestamps();
-        })
+        });
     }
 
     /**
