@@ -28,5 +28,6 @@ Route::middleware([
 });
 
 Route::resource('demandeCarte', 'App\Http\Controllers\CarteEncController');
+Route::resource('mesDemandes', 'App\Http\Controllers\CarteEncController');
 
 
